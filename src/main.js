@@ -18,9 +18,11 @@ router.beforeEach((to,from,next)=>{
   // token不存在，说明当前用户是未登录
   if(!token && to.name !== 'login'){
     next({name: 'login'})
-  }else if(token && to.name === 'login'){ //token存在，说明用户登录，此时跳转到首页
+  }
+  else if(token && to.name === 'login'){ //token存在，说明用户登录，此时跳转到首页
     next({name:'home'})
-  }else {
+  }
+  else {
     next()
   }
 })
