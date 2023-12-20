@@ -28,3 +28,25 @@ export const delUser = (data) => {
 export const getMenu = (data) => {
     return http.post('/permission/getMenu',data)
 }
+
+// 商品信息
+// 获取信息
+export const getMall = (params) => {
+    return http.get('/mall/getMall',params)
+}
+// 增加商品信息
+export const addMall = (data) => {
+    return http.post('/mall/addMall',data)
+}
+// 删除商品信息
+export const delMall = (data) => {
+    return http.post('/mall/deleteMall',data)
+}
+//修改信息
+export const editMall = (data) => {
+    return http.post('/mall/editMall',data)
+}
+//批量删除信息
+export const batchremove = (data) => {
+    return http.post('/mall/batchremove',data)
+}

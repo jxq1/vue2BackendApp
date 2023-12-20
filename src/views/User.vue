@@ -69,7 +69,7 @@
         </el-table-column>
         <el-table-column prop="birth" label="出生日期"> </el-table-column>
         <el-table-column prop="addr" label="地址"> </el-table-column>
-        <el-table-column prop="sex" label="性别">
+        <el-table-column label="编辑">
           <template slot-scope="scope">
             <el-button size="mini" @click="handleEdit(scope.row)"
               >编辑</el-button
